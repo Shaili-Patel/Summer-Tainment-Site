@@ -3,6 +3,19 @@ html {
     width: 100%;
   }
   
+.home {
+  background-image: url(imgs/background.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  height: 100%;
+  width: 100%;
+}
+
   h1 {
     text-align: center;
+    font-size: 60px;
 }
