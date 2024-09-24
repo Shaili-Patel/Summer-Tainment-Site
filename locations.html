@@ -11,9 +11,62 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/zjk0det.css">
   <link rel="stylesheet" href="style.css" />
 </head>
+
+<style>
+  .card {
+    background-color: transparent;
+    /* Makes the background fully transparent */
+    border: none;
+    /* Optional: remove the card border */
+  }
+
+  .card-img {
+    width: 98%;
+    height: 350px;
+    object-fit: cover;
+    /* No padding here */
+    margin-bottom: 5px;
+    margin-left: 30px;
+    margin-right: 20%;
+  }
+
+  .card-text {
+    margin-left: 20px;
+    /* Use margin for spacing */
+  }
+
+  h5 {
+    margin-left: 20px;
+    /* Use margin for spacing */
+    font-size: 35px;
+  }
+
+  p {
+    font-style: bold;
+  }
+
+  .opaque-background {
+    background-color: rgba(255, 255, 255, 0.6);
+    /* White with 80% opacity */
+    color: black;
+    /* Text color */
+    padding: 5px;
+    /* Some padding for better visibility */
+    border-radius: 3px;
+    /* Optional: Rounded corners */
+    margin-left: 20px;
+    padding-right: 80px;
+  }
+</style>
 
 <body class="locations">
   <header>
@@ -50,75 +103,72 @@
 
   <hr>
 
-  <h3>Rome</h3>
 
-  <div class="content">
-    <h4>Rome, the capital of Italy, is a city rich in history and culture.
-      Known as the "Eternal City," it features iconic landmarks like the Colosseum and the Pantheon,
-      along with the stunning Vatican City, home to St. Peter's Basilica. Visitors can explore charming
-      cobblestone streets, savor delicious Italian cuisine, and enjoy the vibrant atmosphere where ancient
-      and modern life beautifully intertwine. With its timeless allure, Rome remains a captivating destination
-      for travelers.</h4>
-    <img src="/imgs/Rome.jpg" alt="Rome">
+  <div class="card text-white">
+    <img class="card-img" src="/imgs/Venice.jpg" alt="Card image">
+    <div class="card-img-overlay">
+      <h5 class="card-title">Venice</h5>
+      <div class="opaque-background">
+        <p class="card-text">Venice, with its enchanting canals and historic architecture, offers a magical blend of
+          art, culture, and romance, making it a captivating destination for travelers from around the world. </p>
+      </div>
+    </div>
   </div>
+
+  <div class="card text-white">
+    <img class="card-img" src="/imgs/Tuscany.jpg" alt="Card image">
+    <div class="card-img-overlay">
+      <h5 class="card-title">Tuscany</h5>
+      <div class="opaque-background">
+        <p class="card-text">Tuscany, renowned for its breathtaking landscapes, rich history, and exquisite cuisine,
+          captivates visitors with its charming villages and world-class art.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card text-white">
+    <img class="card-img" src="/imgs/Rome.jpg" alt="Card image">
+    <div class="card-img-overlay">
+      <h5 class="card-title">Rome</h5>
+      <div class="opaque-background">
+        <p class="card-text">Rome, often called the "Eternal City," is a vibrant tapestry of ancient history and modern
+          life, where iconic landmarks like the Colosseum and the Vatican coexist with bustling streets and delicious
+          cuisine.
+        </p>
+      </div>
+    </div>
+  </div>
+
 
   <hr>
 
-
-  <h3>Venice</h3>
-
-  <div class="content">
-    <h4>Venice, the enchanting city of canals, is a unique treasure in northern Italy. Built on a network of islands,
-      it features picturesque waterways, charming bridges, and vibrant piazzas. Iconic gondolas glide through the
-      canals,
-      offering views of beautiful palaces and historic buildings. Must-see landmarks include St. Mark's Basilica with
-      its
-      stunning mosaics and the bustling Rialto Market. With its romantic ambiance, delicious cuisine, and rich culture,
-      Venice remains a captivating destination for travelers worldwide.</h4>
-    <img src="/imgs/Venice.jpg" alt="Venice">
-  </div>
-
-  <hr>
-
-  <h3>Tuscany</h3>
-
-  <div class="content">
-    <h4>Tuscany, a stunning region in central Italy, is famous for its rolling hills, vineyards, and charming medieval
-      towns.
-      Renowned for its artistic heritage, it boasts cultural treasures like Florence and Siena. Visitors can enjoy
-      exquisite
-      local cuisine and world-class wines, particularly Chianti, while taking in the idyllic landscapes dotted with
-      olive
-      groves and cypress trees. With its perfect blend of natural beauty and rich culture, Tuscany is a must-visit
-      destination
-      for travelers.
-    </h4>
-    <img src="/imgs/Tuscany.jpg" alt="Tuscany">
-  </div>
-
-  <hr>
-
-  <h3>Milan</h3>
-
-  <div class="content">
-    <h4>Milan, Italy's fashion capital, is a vibrant city known for its blend of modernity and history. Iconic landmarks
-      like the Milan Cathedral and La Scala opera house highlight its cultural heritage. Renowned for luxury shopping
-      along Via Montenapoleone, the city also hosts events like Milan Fashion Week. With a lively culinary scene and
-      dynamic nightlife, Milan captivates visitors with its energy and style.
-
-
-
-
-    </h4>
-    <img src="/imgs/Milan.jpg" alt="Milan">
-  </div>
-
-  <hr>
 
 
 
   <footer>
-    <!-- place footer here -->
+    <div class="footer">
+      <div class="row">
+
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.Instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="https://www.venicegov.com/" target="_blank">Venice</a></li>
+          <li><a href="https://www.rome.net/" target="_blank">Rome</a></li>
+          <li><a href="https://www.italia.it/en/tuscany" target="_blank">Tuscany</a></li>
+          <li><a href="https://www.tripadvisor.com/Tourism-g187849-Milan_Lombardy-Vacations.html"
+              target="_blank">Milan</a></li>
+
+        </ul>
+      </div>
+    </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
